@@ -537,6 +537,7 @@ MonoBehaviour:
   sensX: 400
   sensY: 400
   orientation: {fileID: 723331835}
+  camHolder: {fileID: 670634859}
 --- !u!81 &707234562
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1236,7 +1237,6 @@ MonoBehaviour:
   wallJumpUpForce: 10
   wallJumpSideForce: 18
   wallClimbSpeed: 3
-  maxWallRunTime: 1.5
   jumpKey: 32
   upwardsRunKey: 304
   downwardsRunKey: 306
@@ -1244,6 +1244,7 @@ MonoBehaviour:
   minJumpHeight: 2
   exitWallTime: 0.2
   orientation: {fileID: 723331835}
+  cam: {fileID: 707234561}
 --- !u!1 &1979198836
 GameObject:
   m_ObjectHideFlags: 0
