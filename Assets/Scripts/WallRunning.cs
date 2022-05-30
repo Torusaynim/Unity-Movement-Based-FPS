@@ -14,8 +14,8 @@ public class WallRunning : MonoBehaviour
 
     [Header("Input")]
     public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode upwardsRunKey = KeyCode.LeftShift;
-    public KeyCode downwardsRunKey = KeyCode.LeftControl;
+    public KeyCode upwardsRunKey = KeyCode.Mouse0;
+    public KeyCode downwardsRunKey = KeyCode.Mouse1;
     private bool upwardsRunning;
     private bool downwardsRunning;
     private float horizontalInput;

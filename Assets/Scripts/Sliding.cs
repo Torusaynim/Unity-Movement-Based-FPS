@@ -91,7 +91,8 @@ public class Sliding : MonoBehaviour
         pm.sliding = false;
 
         // reset camera effects
-        cam.DoFov(80f);
+        if (!pm.wallrunning)
+            cam.DoFov(80f);
 
         playerObj.localScale = new Vector3(playerObj.localScale.x, startYScale, playerObj.localScale.z);
     }
