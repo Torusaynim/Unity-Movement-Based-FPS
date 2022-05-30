@@ -1210,6 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orientation: {fileID: 723331835}
+  cam: {fileID: 707234561}
   playerObj: {fileID: 1149290399}
   maxSlideTime: 0.75
   slideForce: 300
@@ -1234,9 +1235,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   wallRunForce: 200
-  wallJumpUpForce: 10
-  wallJumpSideForce: 18
-  wallClimbSpeed: 3
+  wallJumpUpForce: 15
+  wallJumpSideForce: 27
+  wallClimbSpeed: 6
   jumpKey: 32
   upwardsRunKey: 304
   downwardsRunKey: 306
