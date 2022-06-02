@@ -1176,7 +1176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 8
   sprintSpeed: 12
-  slideSpeed: 50
+  slideSpeed: 30
   wallrunSpeed: 10
   climbSpeed: 3
   speedIncreaseMultiplier: 1.5
