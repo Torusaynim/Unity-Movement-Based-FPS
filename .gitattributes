@@ -1,1 +1,4 @@
+# Exclude some assets from language stats
 Assets/TextMesh?Pro/* linguist-vendored
+Assets/TextMesh*Pro/* linguist-vendored
+Assets/WhiteCity/* linguist-vendored
