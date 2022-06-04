@@ -43,6 +43,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     [Header("Slope Handling")]
     public float maxSlopeAngle;
+    public float currentAngle;
     private RaycastHit slopeHit;
     private bool exitingSlope;
 
@@ -88,7 +89,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.5f, whatIsGround);
 
         MyInput();
         SpeedControl();
@@ -311,9 +312,10 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     public bool OnSlope()
     {
-        if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.3f))
+        if(Physics.Raycast(transform.position, Vector3.down, out slopeHit, playerHeight * 0.5f + 0.5f))
         {
             float angle = Vector3.Angle(Vector3.up, slopeHit.normal);
+            currentAngle = angle;
             return angle < maxSlopeAngle && angle != 0;
         }
 
